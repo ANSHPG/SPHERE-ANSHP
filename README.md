@@ -20,13 +20,21 @@ Clone the repository to your local machine using the following command:
 
 shell
 Copy code
+
 git clone https://github.com/ANSHPG/SPHERE-ANSHP.git
+
 Navigate to the project directory:
 
+
+
 shell
+
 Copy code
+
 cd threejs-rotating-sphere
+
 Open the index.html file in your preferred web browser.
+
 
 Interact with the rotating sphere using your mouse or touch gestures and enjoy the visually stunning experience!
 
