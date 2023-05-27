@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+
+/* 
+font families avaliable to use currently -> 
+font-family: 'Manrope', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Code Pro', monospace; 
+*/
+
+body,
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.webgl{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav{
+  color: white;
+  z-index: 2;
+  position: relative;
+  /* top | right | bottom | left */
+  padding: 3rem 3rem 5px 3rem ;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Sphere{
+  text-decoration: none;
+  color: rgb(219, 216, 216);
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Manrope', sans-serif;
+}
+.author{
+  color: #cfcbcb;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+.title{
+  color: #ffffff;
+  z-index: 2;
+  position: absolute;
+  font-family: 'Manrope', sans-serif;
+  font-size: 3rem;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -25%);
+}
+
+.spin{
+  color: #0b2c87;
+}
+
+.spin.spinColor {
+  color: #ffffff;
+}
+
+/* cursor */
+
+.inner-cursor{
+  z-index: 4;
+  position: relative;
+  position: fixed;
+  left: 38%;
+  top: 77%;
+  width: 25px;
+  height: 25px;
+  translate: transforms(-50%, -50%);
+  background-color: #0b2c87;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor.grow{
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  transition: width 0.5s height 0.5s;
+  mix-blend-mode: difference;
+}
+
+.inner-cursor.changeColor{
+  background-color: #ffffff;
+}
+
+.inner-cursor.changeSize{
+  width: 40px;
+  height: 40px;
+}
+
+.inner-cursor.nomixblend{
+  mix-blend-mode: normal;
+}
+
+.outer-cursor{
+  z-index: 4;
+  position: relative;
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  transform: translate(-50% , -50%);
+  border: 2px solid #ffffff;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  pointer-events: none;
+  left: 38%;
+  top: 77%;
+}
